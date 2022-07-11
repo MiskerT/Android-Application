@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c196_misker_tsegaye">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C196_Misker_Tsegaye">
+        <receiver
+            android:name=".All.UI.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity
+            android:name=".All.UI.EditNote"
+            android:exported="false"
+            android:label="Edit Note"/>
+        <activity
+            android:name=".All.UI.NoteView"
+            android:exported="false" />
+        <activity
+            android:name=".All.UI.Notes"
+            android:exported="false"
+            android:label="Notes"/>
+        <activity
+            android:name=".All.UI.EditAssessments"
+            android:exported="false"
+            android:label="Edit Assessment"/>
+        <activity
+            android:name=".All.UI.AssessmentView"
+            android:exported="false" />
+        <activity
+            android:name=".All.UI.CourseView"
+            android:exported="false" />
+        <activity
+            android:name=".All.UI.EditTerms"
+            android:exported="false"
+            android:label="Edit Term" />
+        <activity
+            android:name=".All.UI.TermView"
+            android:exported="false"
+            android:label="Courses" />
+        <activity
+            android:name=".All.UI.EditCourses"
+            android:exported="false"
+            android:label="Edit Course"/>
+        <activity
+            android:name=".All.UI.AddTerms"
+            android:exported="false"
+            android:label="Add a Term" />
+        <activity
+            android:name=".All.UI.Assessments"
+            android:exported="false"
+            android:label="@string/assessments" />
+        <activity
+            android:name=".All.UI.Courses"
+            android:exported="false"
+            android:label="@string/courses" />
+        <activity
+            android:name=".All.UI.Terms"
+            android:exported="false"
+            android:label="@string/terms" />
+        <activity
+            android:name=".All.UI.MainActivity"
+            android:exported="true"
+            android:label="@string/welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
